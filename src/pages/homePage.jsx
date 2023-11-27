@@ -1,12 +1,12 @@
 import React from "react";
 import LAYOUT from "../components/user/layout/LAYOUT";
-import Welcome from "../components/Welcome";
+import Home from "../components/Home.jsx";
 
 export default function homePage() {
   return (
     <>
       <LAYOUT>
-        <Welcome />
+        <Home />
       </LAYOUT>
     </>
   );
