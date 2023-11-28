@@ -44,7 +44,7 @@ export default function Header() {
                 <i class="fa-solid fa-users"></i>
               </li>
               <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Reels Video</p>
+                <p>Reels</p>
                 <i class="fa-solid fa-circle-play"></i>
               </li>
               <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">

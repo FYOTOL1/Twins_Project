@@ -1,6 +1,7 @@
 import React from "react";
-import TrendRow from "./utils/TrendRow";
-import CreatePost from "./utils/CreatePost";
+import TrendRow from "./parts/TrendRow";
+import CreatePost from "./parts/CreatePost";
+import PostCard from "./parts/PostCard";
 
 export default function Welcome() {
   return (
@@ -24,7 +25,13 @@ export default function Welcome() {
           {/*  */}
           <section className="w-2/4 text-[whiteSmoke] rounded-md">
             <CreatePost />
-            <hr className="my-3 border-[#80808066]" />
+            <hr className="my-5 border-[#80808066]" />
+            <div className="Posts">
+              <PostCard />
+              <PostCard />
+              <PostCard />
+              <PostCard />
+            </div>
           </section>
           {/*  */}
           <section className="w-1/4 bg-[#0e1824] px-4 py-3 outline outline-1 text-[whiteSmoke] outline-[#222a35] text-center rounded-md">
