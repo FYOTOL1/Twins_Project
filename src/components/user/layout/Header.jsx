@@ -40,8 +40,8 @@ export default function Header() {
                 <i class="fa-solid fa-house"></i>
               </li>
               <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>My Network</p>
-                <i class="fa-solid fa-user"></i>
+                <p>Groups</p>
+                <i class="fa-solid fa-users"></i>
               </li>
               <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
                 <p>Reels Video</p>

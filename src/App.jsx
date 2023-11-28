@@ -1,15 +1,15 @@
 import "./App.css";
 import * as React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./pages/homePage.jsx";
 import loginPage from "./pages/auth/loginPage.jsx";
 import signupPage from "./pages/auth/signupPage.jsx";
+import homePage from "./pages/user/homePage.jsx";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      Component: Home,
+      Component: homePage,
       errorElement: "Not Found",
     },
     {
