@@ -2,6 +2,7 @@ import React from "react";
 import TrendRow from "./parts/TrendRow";
 import CreatePost from "./parts/CreatePost";
 import PostCard from "./parts/PostCard";
+import Profile from "./parts/Profile";
 
 export default function Welcome() {
   return (
@@ -34,8 +35,8 @@ export default function Welcome() {
             </div>
           </section>
           {/*  */}
-          <section className="w-1/4 bg-[#0e1824] px-4 py-3 outline outline-1 text-[whiteSmoke] outline-[#222a35] text-center rounded-md">
-            c
+          <section className="w-1/4 outline outline-1 text-[whiteSmoke] outline-[#222a35] text-center rounded-md">
+            <Profile />
           </section>
         </div>
       </main>

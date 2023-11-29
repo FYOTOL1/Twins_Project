@@ -28,6 +28,10 @@ header.user-header {
   padding: 0 10px;
 }
 
+.mark {
+  outline: 1px solid gray;
+}
+
 .active-nav::before {
   content: "";
   position: absolute;
