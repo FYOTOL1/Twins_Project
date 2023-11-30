@@ -3,7 +3,7 @@ import React from "react";
 export default function PostCard() {
   return (
     <>
-      <div className="Post-Card rounded-md p-5 pb-0 outline outline-1 outline-[#222a35] mb-5">
+      <div className="Post-Card rounded-md p-5 outline outline-1 outline-[#222a35] mb-5">
         <div className="User-Details flex items-start gap-3 w-full h-[78px]">
           <img
             className="w-14 rounded-full"
