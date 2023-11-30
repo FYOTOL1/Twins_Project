@@ -1,0 +1,18 @@
+#bg-image {
+  background-color: white;
+  height: 120px;
+  background: url("../Images/0001.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#profile-content h5 {
+  font-size: 18px;
+}
+#profile-content .flex {
+  margin-bottom: 10px;
+}
+#profile-img {
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+}
