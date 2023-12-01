@@ -48,7 +48,7 @@ export default function PostCard({
           </div>
         </div>
         {/*  */}
-        <div className="Events h-12 w-full flex justify-between items-center [border-top:1px_solid_#152535] my-1">
+        <div className="Events h-12 w-full flex justify-between items-center flex-row-reverse [border-top:1px_solid_#152535] my-1">
           <div className="Event h-full flex justify-between items-center flex-row-reverse gap-3 text-center cursor-pointer transition-all hover:text-blue-300">
             <p>Like</p>
             <i className="fa-solid fa-thumbs-up text-2xl"></i>
