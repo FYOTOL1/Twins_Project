@@ -4,12 +4,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import loginPage from "./pages/auth/loginPage.jsx";
 import signupPage from "./pages/auth/signupPage.jsx";
 import homePage from "./pages/user/homePage.jsx";
+import groupsPage from "./pages/user/groupsPage.jsx";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       Component: homePage,
+      errorElement: "Not Found",
+    },
+    {
+      path: "/groups",
+      Component: groupsPage,
       errorElement: "Not Found",
     },
     {

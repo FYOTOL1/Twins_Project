@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   const [List, setList] = useState(false);
   const [Authed, setAuthed] = useState(true);
+  const [path, setPath] = useState("");
+  useEffect(() => {
+    setPath(window.location.pathname.replace("/", ""));
+    setAuthed(true);
+  }, []);
+
   return (
     <>
       <header className="user-header h-[70px]">
         <div className="container h-full flex justify-between items-center">
           <div className="Logo-Search flex gap-4 items-center">
             <div className="Logo">
-              <Link to="/">
+              <Link
+                className="flex items-baseline flex-row-reverse gap-2
+              "
+                to="/"
+              >
                 <img
                   className="w-10 h-10 object-contain"
                   src="../../../../icon.png"
@@ -34,28 +44,77 @@ export default function Header() {
               </label>
             </div>
           </div>
-
           <nav className="nav">
             <ul className="ul-List flex gap-16">
-              <li className="active-nav flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Home</p>
-                <i className="fa-solid fa-house"></i>
+              <li
+                className={`${
+                  path === "" ? "active-nav" : null
+                } text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative`}
+              >
+                <Link
+                  className="flex items-baseline flex-row-reverse gap-2
+                "
+                  to={"/"}
+                >
+                  <p>Home</p>
+                  <i className="fa-solid fa-house"></i>
+                </Link>
               </li>
-              <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Groups</p>
-                <i className="fa-solid fa-users"></i>
+              <li
+                className={`${
+                  path === "groups" ? "active-nav" : null
+                } text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative`}
+              >
+                <Link
+                  className="flex items-baseline flex-row-reverse gap-2
+                "
+                  to={"/groups"}
+                >
+                  <p>Groups</p>
+                  <i className="fa-solid fa-users"></i>
+                </Link>
               </li>
-              <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Reels</p>
-                <i className="fa-solid fa-circle-play"></i>
+              <li
+                className={`${
+                  path === "reels" ? "active-nav" : null
+                } text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative`}
+              >
+                <Link
+                  className="flex items-baseline flex-row-reverse gap-2
+                "
+                  to={"/reels"}
+                >
+                  <p>Reels</p>
+                  <i className="fa-solid fa-circle-play"></i>
+                </Link>
               </li>
-              <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Notification</p>
-                <i className="fa-solid fa-bell"></i>
+              <li
+                className={`${
+                  path === "notification" ? "active-nav" : null
+                } text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative`}
+              >
+                <Link
+                  className="flex items-baseline flex-row-reverse gap-2
+                "
+                  to={"/notification"}
+                >
+                  <p>Notification</p>
+                  <i className="fa-solid fa-bell"></i>
+                </Link>
               </li>
-              <li className="flex items-baseline flex-row-reverse gap-2 text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative">
-                <p>Messenger</p>
-                <i className="fa-solid fa-message"></i>
+              <li
+                className={`${
+                  path === "messenger" ? "active-nav" : null
+                } text-lg text-[gainsboro] transition-all hover:text-white cursor-pointer relative`}
+              >
+                <Link
+                  className="flex items-baseline flex-row-reverse gap-2
+                "
+                  to={"/messenger"}
+                >
+                  <p>Messenger</p>
+                  <i className="fa-solid fa-message"></i>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -88,7 +147,7 @@ export default function Header() {
                         Profile
                       </Link>
                       <Link
-                        to="#"
+                        to="/groups"
                         className="block px-4 py-2 text-sm text-[whiteSmoke] transition-all hover:opacity-75"
                         role="menuitem"
                         tabindex="-1"
