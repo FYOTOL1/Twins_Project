@@ -10,7 +10,7 @@ function Profile() {
         <img src={male} alt="profile-img" id="profile-img" />
       </div>
 
-      <div id="profile-content" className="text-left pb-10 px-10 mt-7">
+      <div className="profile-content text-left pb-10 px-10 mt-7">
         <h4 className="text-lg text-lime-100">Brad Winston</h4>
         <p className="text-gray-400">Front End in Google</p>
         <div className="mt-5 flex justify-between">

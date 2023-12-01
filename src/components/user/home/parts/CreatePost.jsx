@@ -21,15 +21,15 @@ export default function CreatePost() {
         <div className="Details-Submit h-12 w-full flex justify-between items-center [border-top:1px_solid_#152535]">
           <div className="detail h-full flex justify-center items-center flex-row-reverse gap-3 text-center w-1/4 outline outline-1 outline-[#152535] cursor-pointer transition-all hover:opacity-50">
             <p>Photo</p>
-            <i class="fa-solid fa-camera text-xl text-blue-500"></i>
+            <i className="fa-solid fa-camera text-xl text-blue-500"></i>
           </div>
           <div className="detail h-full flex justify-center items-center flex-row-reverse gap-3 text-center w-1/4 outline outline-1 outline-[#152535] cursor-pointer transition-all hover:opacity-50">
             <p>Video</p>
-            <i class="fa-solid fa-video text-xl text-blue-500"></i>
+            <i className="fa-solid fa-video text-xl text-blue-500"></i>
           </div>
           <div className="detail h-full flex justify-center items-center flex-row-reverse gap-3 text-center w-1/4 outline outline-1 outline-[#152535] cursor-pointer transition-all hover:opacity-50">
             <p>Hash Tag</p>
-            <i class="fa-solid fa-hashtag text-xl text-blue-500"></i>
+            <i className="fa-solid fa-hashtag text-xl text-blue-500"></i>
           </div>
           <div className="detail h-full flex justify-center items-center flex-row-reverse gap-3 text-center w-1/4 outline outline-1 outline-[#152535] cursor-pointer transition-all hover:opacity-75 bg-blue-500">
             <p>Post</p>

@@ -43,16 +43,6 @@ header.user-header {
   background-color: teal;
 }
 
-@media (max-width: 375px) {
-  .last_inputs {
-    flex-direction: column;
-    gap: 16px;
-    .btn {
-      width: 100%;
-    }
-  }
-}
-
 @media (max-width: 1250px) {
   .user-header {
     .nav {
@@ -73,6 +63,48 @@ header.user-header {
     }
     .Lines-List {
       display: inline-block;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .Profile {
+    .profile-content {
+      padding: 5px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 920px) {
+  .Details-Submit {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    .detail {
+      width: 100%;
+      padding: 5px 0;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .Details-Submit {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    .detail {
+      width: 100%;
+      padding: 7px 0;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .last_inputs {
+    flex-direction: column;
+    gap: 16px;
+    .btn {
+      width: 100%;
     }
   }
 }

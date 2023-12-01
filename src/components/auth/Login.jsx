@@ -37,6 +37,7 @@ export default function Signup() {
               name="email"
               aria-label="Email"
               aria-describedby="email"
+              autoFocus="on"
             />
             <span
               className="flex items-center whitespace-nowrap rounded-r border border-l-0 border-solid border-neutral-300 px-3 py-[0.25rem] text-center text-base font-normal leading-[1.6] dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200"
@@ -77,7 +78,7 @@ export default function Signup() {
         to={"/auth/signup"}
       >
         <p>Sign up</p>
-        <i class="fa-solid fa-arrow-left"></i>
+        <i className="fa-solid fa-arrow-left"></i>
       </Link>
     </>
   );

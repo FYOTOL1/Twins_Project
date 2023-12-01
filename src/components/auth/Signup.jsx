@@ -39,6 +39,7 @@ export default function Signup() {
             />
           </label>
           <input
+            autoComplete="off"
             onChange={() => Avatar_Handler()}
             type="file"
             className="[display:none]"
@@ -55,6 +56,8 @@ export default function Signup() {
             @
           </span>
           <input
+            autoComplete="off"
+            autoFocus="on"
             type="text"
             className="relative text-gray-50 m-0 block w-[1px] min-w-0 flex-auto rounded-r border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
             placeholder="Username"
@@ -67,6 +70,7 @@ export default function Signup() {
         <div className="relative text-gray-50 mb-4">
           <div className="flex w-full mb-4">
             <input
+              autoComplete="off"
               type="text"
               className="relative text-gray-50 m-0 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
               placeholder="Email"
@@ -83,6 +87,7 @@ export default function Signup() {
           </div>
           <div className="flex w-full mb-4">
             <input
+              autoComplete="off"
               type="text"
               className="relative text-gray-50 m-0 block w-[1px] min-w-0 flex-auto rounded-l border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
               placeholder="Password"
@@ -102,6 +107,7 @@ export default function Signup() {
         <div className="last_inputs relative text-gray-50 gap-1 mb-4 flex items-center">
           <div className="flex w-full">
             <input
+              autoComplete="off"
               type="text"
               className="relative [border-radius:4px_0px_0px_4px] text-gray-50 m-0 block w-[1px] min-w-0 flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
               aria-label="Country"
@@ -117,6 +123,7 @@ export default function Signup() {
           </div>
           <div className="flex w-full">
             <input
+              autoComplete="off"
               type="text"
               className="relative [border-radius:4px_0px_0px_4px] text-gray-50 m-0 block w-[1px] min-w-0 flex-auto border border-solid border-neutral-300 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] outline-none transition duration-200 ease-in-out focus:z-[3] focus:border-primary focus focus:shadow-[inset_0_0_0_1px_rgb(59,113,202)] focus:outline-none dark:border-neutral-600 dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:focus:border-primary"
               aria-label="age"
@@ -145,7 +152,7 @@ export default function Signup() {
         to={"/auth/login"}
       >
         <p>Login</p>
-        <i class="fa-solid fa-arrow-right"></i>
+        <i className="fa-solid fa-arrow-right"></i>
       </Link>
     </>
   );
