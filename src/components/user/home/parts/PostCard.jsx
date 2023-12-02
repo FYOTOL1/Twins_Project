@@ -15,6 +15,7 @@ export default function PostCard({
       <div className="Post-Card rounded-md p-5 pb-0 outline outline-1 outline-[#222a35]">
         <div className="User-Details flex items-start gap-3 w-full h-[78px]">
           <img
+            loading="lazy"
             className="w-14 rounded-full"
             src="../../../../../icon.png"
             alt="User Avatar"
@@ -32,6 +33,7 @@ export default function PostCard({
         </div>
         <div className="Image relative h-96 overflow-hidden my-3">
           <img
+            loading="lazy"
             className="absolute w-full h-full object-scale-down rounded-smst"
             src={src_img}
             alt="img"

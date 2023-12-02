@@ -6,6 +6,7 @@ export default function CreatePost() {
       <div className="outline outline-1 text-[whiteSmoke] outline-[#222a35] bg-[#0e1824] rounded-md overflow-hidden">
         <div className="Post-Form flex items-center gap-2 h-24 p-3 py-5">
           <img
+            loading="lazy"
             className="w-14 h-full rounded-full object-fill p-1"
             src="../../../../../icon.png"
             alt="Avatar"

@@ -22,6 +22,7 @@ export default function Header() {
                 to="/"
               >
                 <img
+                  loading="lazy"
                   className="w-10 h-10 object-contain"
                   src="../../../../icon.png"
                   alt="Logo"
@@ -121,6 +122,7 @@ export default function Header() {
 
           <div className="Profile relative w-10 h-10 object-fill rounded-full outline outline-offset-2 outline-[#3f5470] outline-1 ">
             <img
+              loading="lazy"
               onClick={() => setList(!List)}
               className="w-full h-full transition-all cursor-pointer hover:opacity-75"
               src="../../../../icon.png"

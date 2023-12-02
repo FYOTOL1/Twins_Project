@@ -7,7 +7,7 @@ function Profile() {
     <div className="bg-[#0e1824] outline outline-1 outline-[#222a35] rounded-md mb-10">
       <div id="bg-image"></div>
       <div className="text-center flex justify-center -mt-12">
-        <img src={male} alt="profile-img" id="profile-img" />
+        <img loading="lazy" src={male} alt="profile-img" id="profile-img" />
       </div>
 
       <div className="profile-content text-left pb-10 px-10 mt-7">

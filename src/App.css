@@ -32,6 +32,11 @@ header.user-header {
   outline: 1px solid gray;
 }
 
+.group-card-auto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
 .active-nav::before {
   content: "";
   position: absolute;

@@ -30,6 +30,7 @@ export default function Signup() {
             className="relative block rounded-full transition-all hover:rotate-12 cursor-pointer h-20 w-20 bg-[white] overflow-hidden"
           >
             <img
+              loading="lazy"
               className="w-full h-full object-cover"
               ref={imgRef}
               src={

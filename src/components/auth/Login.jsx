@@ -16,6 +16,7 @@ export default function Signup() {
     <>
       <Link to={"/"}>
         <img
+          loading="lazy"
           className="w-20 h-20 m-auto mb-10 cursor-pointer"
           src="../../../icon.png"
           alt="Icon of Platform"

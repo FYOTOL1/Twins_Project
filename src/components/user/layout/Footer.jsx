@@ -12,6 +12,7 @@ export default function Footer() {
             <div className="mb-6 md:mb-0">
               <Link to="/" className="flex items-center">
                 <img
+                  loading="lazy"
                   src="../../../..../../../../icon.png"
                   className="h-8 me-3"
                   alt="3ayez Logo"
