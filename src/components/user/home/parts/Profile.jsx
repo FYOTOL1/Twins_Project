@@ -2,10 +2,13 @@ import React from "react";
 import male from "../../../../assetes/Images/male.jpg";
 import "../../../../assetes/Css/main.css";
 
-function Profile() {
+function Profile({ Style }) {
   return (
     <section className="L Profile w-full text-[whiteSmoke] text-left">
-      <div className="bg-[#0e1824] outline outline-1 outline-[#222a35] rounded-md mb-10">
+      <div
+        style={Style}
+        className="bg-[#0e1824] outline outline-1 outline-[#222a35] rounded-md mb-10"
+      >
         <div id="bg-image"></div>
         <div className="text-center flex justify-center -mt-12">
           <img loading="lazy" src={male} alt="profile-img" id="profile-img" />

@@ -9,10 +9,10 @@ export default function AboutCard({
   Detail_Style,
 }) {
   return (
-    <section className="About-Group w-full text-[whiteSmoke] text-left">
+    <section className="About-Group w-full h-full text-[whiteSmoke] text-left">
       <div
         style={Style}
-        className="bg-[#0e1824] outline outline-1 outline-[#222a35] rounded-md mb-10 p-2"
+        className="bg-[#0e1824] outline outline-1 h-full outline-[#222a35] rounded-md mb-10 p-2"
       >
         <h2 className="text-gray-300 pb-2 pt-1 [border-bottom:1px_solid_#1e2630]">
           About
