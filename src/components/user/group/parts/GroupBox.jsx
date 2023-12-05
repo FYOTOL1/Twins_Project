@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function GroupBox({ name, date, img_src }) {
+export default function GroupBox({ id, name, date, img_src }) {
   return (
     <>
       <div className="Group-Card flex flex-col justify-between h-40 bg-[#111827] outline outline-1 outline-gray-800 rounded-md p-3">
@@ -20,11 +21,14 @@ export default function GroupBox({ name, date, img_src }) {
         </div>
 
         <div className="flex justify-between items-center flex-row-reverse text-[whiteSmoke]">
-          <button className="border-none outline-none w-3/4 bg-[#222a35] py-1 transition-all hover:opacity-75 rounded-md">
+          <Link
+            to={`/groups/${id}`}
+            className="border-none text-center outline-none w-3/4 bg-[#222a35] py-1 transition-all hover:opacity-75 rounded-md"
+          >
             Go
-          </button>
+          </Link>
           <button className="flex items-center border-none outline-none py-2 px-6 rounded-md transition-all hover:opacity-75 bg-[#222a35]">
-            <i class="fa-solid fa-ellipsis"></i>
+            <i className="fa-solid fa-ellipsis"></i>
           </button>
         </div>
       </div>
